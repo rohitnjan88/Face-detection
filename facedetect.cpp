@@ -76,14 +76,15 @@ void detectAndDraw( Mat& img,
     int i = 0;
     double t = 0;
     vector<Rect> faces;
-    const static Scalar colors[] =  { CV_RGB(0,0,255),
-        CV_RGB(0,128,255),
-        CV_RGB(0,255,255),
-        CV_RGB(0,255,0),
-        CV_RGB(255,128,0),
-        CV_RGB(255,255,0),
-        CV_RGB(255,0,0),
-        CV_RGB(255,0,255)} ;
+    const static Scalar colors[] =  { CV_RGB(255,0,0),
+//        CV_RGB(0,128,255),
+//        CV_RGB(0,255,255),
+//        CV_RGB(0,255,0),
+//        CV_RGB(255,128,0),
+//        CV_RGB(255,255,0),
+//        CV_RGB(255,0,0),
+//        CV_RGB(255,0,255)
+} ;
     Mat gray, smallImg( cvRound (img.rows/scale), cvRound(img.cols/scale), CV_8UC1 );
 
     cvtColor( img, gray, CV_BGR2GRAY );
